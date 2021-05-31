@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{RedFox}{RGB}{195, 88, 23}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{RedFox}
+\colorlet{accent}{RedFox}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Mirjalal TALISHINSKI}
+\tagline{Android Developer}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \location{Baku, Azerbaijan}
+  \phone{tel:+994777511512}{+994 777 511 512}
+  \mailaddress{mailto:mirjalal.talishinski@gmail.com}{mirjalal.talishinski@gmail.com}\\
+  \github{https://github.com/mirjalal}{mirjalal}
+  \stackoverflow{https://stackoverflow.com/u/4057688}{mirjalal}
+  \linkedin{https://www.linkedin.com/in/mirjalaltalishinski}{mirjalaltalishinski}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Android Developer}{\href{https://tayqatech.com}{TayqaTech Ltd}}{July 2020 -- Ongoing}{Baku, Azerbaijan}
+\begin{itemize}
+\item We have created \& published a B2B E-Commerce Mobile application and also maintaining and supporting that application.
+\item As a developer I learned how to create complex multi-module app.
+\item Published app: \playstore{https://play.google.com/store/apps/details?id=com.tayqatech.ecom}{Sincab}
+\end{itemize}
+
+\divider
+
+\cvevent{Android Developer}{Freelancer}{May 2020 -- Ongoing}{Remote}
+\begin{itemize}
+\item Currently, I am working on a variety of projects as a freelancer of which includes developing a retail banking app for one of the local banks and several enterprise resource planning and marketing apps.
+\item Published apps: \playstore{https://play.google.com/store/apps/details?id=az.btb.mobilebanking}{BTB Mobile}
+\end{itemize}
+
+\divider
+
+\cvevent{Android Developer}{\href{certoclav.com/en}{CertoClav GmBH}}{Nov 2019 -- May 2020}{Linz, Austria (Remote)}
+\begin{itemize}
+\item Wrote unit test and debugged critical application issues such as crashes, memory leaks. Performed bug fixes and added new features.
+\item Implemented new generic product components for EU clients.
+\item Worked closely with R\&D of the clients \& I finished all of the tasks a month before the deadline (as a result our clients got their FDA Certificates).
+\end{itemize}
+\divider
+
+\cvevent{Android Developer}{\href{https://rabita.az/en/index}{Data Processing Center}}{Aug 2018 -- Nov 2019}{Baku, Azerbaijan}
+\begin{itemize}
+\item Provided weekly progress report to executive staff, ensuring that all parties were informed of milestones.
+\item Focused heavily on learning and growing development skills using SOLID and TDD practices in an Agile development process.
+\item Published app: \playstore{https://play.google.com/store/apps/details?id=com.mhm.sxm.edocverifier}{EDoc Verifier}
+\end{itemize}
+
+\divider
+
+\cvevent{Software Developer}{\href{http://kiber.az/}{Kiber Ltd}}{Apr 2013 -- Jul 2017}{Baku, Azerbaijan}
+\begin{itemize}
+\item Led team of 5 developers in analysis and rebuild of software from beginning design through completion.
+\item Developed object-oriented software, including multi-platform software (desktop, web and Android) for use in ERP industry.
+\item Developed Android application for internal project to use in the company.
+\item Optimized, managed and made relevant changes in existed applications.
+\end{itemize}
+
+
+\clearpage
+
+\end{document}
